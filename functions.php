@@ -3,7 +3,7 @@
 		global $Wcms;
 
 		// Check if the newEditableArea area is already exists, if not, create it
-		if (empty($Wcms->get('blocks',$name))) {
+		if (empty((array) $Wcms->get('blocks',$name))) {
 			$Wcms->set('blocks',$name, 'content', $default);
 		}
 
@@ -11,7 +11,7 @@
 		$value = $Wcms->get('blocks',$name,'content');
 
 		// If value is empty, let's put something in it by default
-		if (empty($value)) {
+		if (empty((array) $value)) {
 			$value = $default;
 		}
 		if ($Wcms->loggedIn) {
