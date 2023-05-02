@@ -535,3 +535,15 @@
 		padding: 2rem 5rem;
 		margin-top: 2rem;
 	}
+
+/*
+OVERWRITE SUMMERNOTE
+ */
+.panel-default > .panel-heading {
+   background-color: transparent;
+}
+
+.panel-default > .panel-heading .note-btn {
+   font-size: 18px;
+   padding: 12px
+}
